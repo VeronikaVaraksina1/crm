@@ -26,9 +26,9 @@ export interface PromotionFormProps {
 }
 
 export default function PromotionForm({
-  companyId,
-  onSubmit,
-}: PromotionFormProps) {
+                                        companyId,
+                                        onSubmit,
+                                      }: PromotionFormProps) {
   const queryClient = useQueryClient();
 
   const { data: company } = useQuery({

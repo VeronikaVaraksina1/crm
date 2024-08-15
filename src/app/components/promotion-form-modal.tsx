@@ -9,10 +9,10 @@ export interface PromotionFormModal extends ModalProps {
 }
 
 export default function PromotionFormModal({
-  companyId,
-  onClose,
-  ...rest
-}: PromotionFormModal) {
+                                             companyId,
+                                             onClose,
+                                             ...rest
+                                           }: PromotionFormModal) {
   return (
     <Modal {...rest} onClose={onClose}>
       <PromotionForm companyId={companyId} onSubmit={() => onClose()} />
